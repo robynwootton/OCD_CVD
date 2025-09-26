@@ -273,9 +273,9 @@ out_dat_bin <- TwoSampleMR::read_outcome_data(
 out_dat_bin$outcome <- "OCD"
 
 #add the outcome columns later for Steiger
-out_dat_bin$samplesize.outcome<- 401460
-out_dat_bin$ncase.outcome<-37015
-out_dat_bin$ncontrol.outcome<-948616
+out_dat_bin$samplesize.outcome<- 1138106
+out_dat_bin$ncase.outcome<-23493
+out_dat_bin$ncontrol.outcome<-1114613
 out_dat_bin$units.outcome<-"log odds"
 out_dat_bin$prevalence.outcome<-0.01
 
@@ -294,9 +294,9 @@ out_dat_cont <- TwoSampleMR::read_outcome_data(
 out_dat_cont$outcome <- "OCD"
 
 #add the outcome columns later for steiger
-out_dat_cont$samplesize.outcome<- 401460
-out_dat_cont$ncase.outcome<-37015
-out_dat_cont$ncontrol.outcome<-948616
+out_dat_cont$samplesize.outcome<- 1138106
+out_dat_cont$ncase.outcome<-23493
+out_dat_cont$ncontrol.outcome<-1114613
 out_dat_cont$units.outcome<-"log odds"
 out_dat_cont$prevalence.outcome<-0.01
 
@@ -315,9 +315,9 @@ out_dat_hf <- TwoSampleMR::read_outcome_data(
 out_dat_hf$outcome <- "OCD"
 
 #add the columns later for steiger
-out_dat_hf$samplesize.outcome<- 401460
-out_dat_hf$ncase.outcome<-37015
-out_dat_hf$ncontrol.outcome<-948616
+out_dat_hf$samplesize.outcome<- 1138106
+out_dat_hf$ncase.outcome<-23493
+out_dat_hf$ncontrol.outcome<-1114613
 out_dat_hf$units.outcome<-"log odds"
 out_dat_hf$prevalence.outcome<-0.01
 
@@ -336,9 +336,9 @@ out_dat_hrv <- TwoSampleMR::read_outcome_data(
 out_dat_hrv$outcome <- "OCD"
 
 #add the columns later for steiger
-out_dat_hrv$samplesize.outcome<- 401460
-out_dat_hrv$ncase.outcome<-37015
-out_dat_hrv$ncontrol.outcome<-948616
+out_dat_hrv$samplesize.outcome<- 1138106
+out_dat_hrv$ncase.outcome<-23493
+out_dat_hrv$ncontrol.outcome<-1114613
 out_dat_hrv$units.outcome<-"log odds"
 out_dat_hrv$prevalence.outcome<-0.01
 
@@ -358,9 +358,9 @@ out_dat_sbp <- TwoSampleMR::read_outcome_data(
 out_dat_sbp$outcome <- "OCD"
 
 #add the columns later for steiger
-out_dat_sbp$samplesize.outcome<- 401460
-out_dat_sbp$ncase.outcome<-37015
-out_dat_sbp$ncontrol.outcome<-948616
+out_dat_sbp$samplesize.outcome<- 1138106
+out_dat_sbp$ncase.outcome<-23493
+out_dat_sbp$ncontrol.outcome<-1114613
 out_dat_sbp$units.outcome<-"log odds"
 out_dat_sbp$prevalence.outcome<-0.01
 
@@ -380,9 +380,9 @@ out_dat_dbp <- TwoSampleMR::read_outcome_data(
 out_dat_dbp$outcome <- "OCD"
 
 #add the columns later for steiger
-out_dat_dbp$samplesize.outcome<- 401460
-out_dat_dbp$ncase.outcome<-37015
-out_dat_dbp$ncontrol.outcome<-948616
+out_dat_dbp$samplesize.outcome<- 1138106
+out_dat_dbp$ncase.outcome<-23493
+out_dat_dbp$ncontrol.outcome<-1114613
 out_dat_dbp$units.outcome<-"log odds"
 out_dat_dbp$prevalence.outcome<-0.01
 
@@ -401,9 +401,9 @@ out_dat_thromb <- TwoSampleMR::read_outcome_data(
 out_dat_thromb$outcome <- "OCD"
 
 #add the columns later for steiger
-out_dat_thromb$samplesize.outcome<- 401460
-out_dat_thromb$ncase.outcome<-37015
-out_dat_thromb$ncontrol.outcome<-948616
+out_dat_thromb$samplesize.outcome<- 1138106
+out_dat_thromb$ncase.outcome<-23493
+out_dat_thromb$ncontrol.outcome<-1114613
 out_dat_thromb$units.outcome<-"log odds"
 out_dat_thromb$prevalence.outcome<-0.01
 
@@ -601,9 +601,9 @@ data_cad $units.exposure<-"log odds"
 data_cad $prevalence.exposure<-0.05
 
 #T2D
-data_t2d$samplesize.exposure<- 12171
-data_t2d$ncase.exposure <- 6377
-data_t2d$ncontrol.exposure<- 	5794
+data_t2d$samplesize.exposure<- 69033
+data_t2d$ncase.exposure <- 12171
+data_t2d$ncontrol.exposure<- 	56862
 data_t2d$units.exposure<-"log odds"
 data_t2d$prevalence.exposure<-0.06
 data_t2d $eaf.exposure<-data_t2d $eaf.outcome
