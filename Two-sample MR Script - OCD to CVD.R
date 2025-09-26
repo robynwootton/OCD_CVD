@@ -69,15 +69,14 @@ exp_dat <- TwoSampleMR::read_exposure_data(
 exp_dat$exposure <- "OCD"
 
 #add the columns later for steiger
-exp_dat$samplesize.exposure<- 401460
-exp_dat$ncase.exposure<-37015
-exp_dat$ncontrol.exposure<-948616
+exp_dat$samplesize.exposure<- 2098077
+exp_dat$ncase.exposure<-53660
+exp_dat$ncontrol.exposure<-2044417
 exp_dat$units.exposure<-"log odds"
 exp_dat$prevalence.exposure<-0.01
 
-N <- 37015+948616 #The GWAS sample size
-
 #Calculate variance explained by the instrument in discovery sample
+N <- 2098077
 exp_dat$r2 <- (2*(exp_dat$beta^2)* exp_dat$eaf*(1-exp_dat$eaf))/
   (2*(exp_dat$beta^2)* exp_dat$eaf*(1-exp_dat$eaf)+(exp_dat$se^2)*2*N* exp_dat$eaf*(1-exp_dat$eaf))
 #total variance explained by the instrument:
@@ -413,20 +412,12 @@ data_cad $units.outcome<-"log odds"
 data_cad $prevalence.outcome<-0.05
 
 #T2D
-data_t2d $samplesize.outcome<- 12171
-data_t2d $ncase.outcome <- 6377
-data_t2d $ncontrol.outcome<- 	5794
+data_t2d $samplesize.outcome<- 69033
+data_t2d $ncase.outcome <- 12171
+data_t2d $ncontrol.outcome<- 	56862
 data_t2d $units.outcome<-"log odds"
 data_t2d $prevalence.outcome<-0.06
 data_t2d $eaf.outcome <- data_t2d $eaf.exposure
-steiger <- steiger_filtering(data_t2d)
-false <- length(steiger$steiger_dir[steiger$steiger_dir == FALSE])
-true <- length(steiger$steiger_dir[steiger$steiger_dir == TRUE])
-percent <- (true/(true+false))*100 
-
-#rerun as less than 90% TRUE
-data_t2d_rerun <- subset(steiger, steiger$steiger_dir==TRUE)
-res <- TwoSampleMR::mr(data_t2d_rerun, method_list=c("mr_ivw", "mr_egger_regression", "mr_weighted_median", "mr_weighted_mode"))
 
 #MI
 data_mi $samplesize.outcome<- 171875
